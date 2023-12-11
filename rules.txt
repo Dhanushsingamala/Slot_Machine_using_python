@@ -1,0 +1,63 @@
+#Slot Machine Game Rules
+    
+    Welcome to the Slot Machine Game! Below are the rules to get you started on creating your very own slot machine game in Python.
+
+#Overview
+    The game is a simple console-based slot machine where players can simulate spins, place bets, and win prizes based on the resulting combinations of symbols.
+
+#Game Components
+Constants
+    MAX_LINES: The maximum number of lines a player can bet on.
+    MAX_BET: The maximum bet amount a player can place.
+    MIN_BET: The minimum bet amount a player can place.
+    ROWS: The number of rows in the slot machine display.
+    COLS: The number of columns in the slot machine display.
+
+#Symbol Definitions
+    Define the symbols and their properties using two dictionaries:
+
+python
+Copy code
+# Define the frequency of appearance for each symbol
+    symbols_and_frequencies = {
+        "A" : 2,
+        "B" : 4,
+        "C" : 6,
+        "D" : 8,
+    }
+
+# Define the corresponding values for each symbol
+    symbols_and_values = {
+        "A" : 5,
+        "B" : 4,
+        "C" : 3,
+        "D" : 2,
+    }
+#Functions
+    1.check_winnings(columns, lines, bet, values): Check winnings based on the spin result.
+    2.get_slot_machine_spin(rows, cols, symbols): Simulate a slot machine spin.
+    3.print_slot_machine(columns): Print the result of the slot machine spin.
+    4.deposit(): Get the initial deposit amount from the player.
+    5.get_num_of_lines(): Get the number of lines the player wants to bet on.
+    6.get_bet(): Get the bet amount from the player.
+    7.spin(balance): Perform a spin and calculate winnings.
+    8.main(): The main function to run the slot machine game.
+#How to Play
+    1.Run the Script: Execute the main.py script using a Python interpreter.
+    2.Deposit Money: Enter the initial deposit amount when prompted.
+    3.Place Bets:
+        Enter the number of lines to bet on (1 - MAX_LINES).
+        Enter the bet amount (between MIN_BET and MAX_BET).
+    4.Spin the Slot Machine:
+        Press Enter to spin the slot machine.
+    5.Outcome:
+        View the outcome of the spin and check if you've won on any lines.
+        If you win, the game will display the winning lines and the amount won.
+    6.Continue Playing:
+        Press Enter to spin again or type 'q' to quit the game.
+##Customization
+Feel free to customize the game by adjusting the constant variables and the symbol definitions in the script. Experiment with different values to create your unique slot machine experience.
+
+Have Fun!
+Enjoy creating your slot machine game! If you have any questions or need further assistance, feel free to ask.
+
